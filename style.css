@@ -1,0 +1,336 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.navContainer{
+    background-color:black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+
+
+
+.navItem{
+    width: 500px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.navItem:hover{
+    padding:20px;
+    background-color: grey;
+    color: black;
+}
+
+html,body{
+    height: 100%;
+
+}
+
+.imgContainer{
+    background-image: url("https://www.w3schools.com/w3images/coffeehouse.jpg");
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.image{
+    width: 100%;
+}
+
+.title{ 
+    text-align: center;
+    font-size:65px;
+    font-weight:400;
+    color: white;
+    line-height: 80px;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftText{
+    color: white;
+    font-size: 15px;
+    font-weight:400;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: black;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+    margin-left: 20px;
+
+}
+
+.rightText{
+    color: white;
+    font-size: 15px;
+    font-weight:400;
+    padding: 10px;
+    margin-top: 50px;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin:10px;
+    margin-right: 20px;
+}
+
+
+.bgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutContainer{
+    color: white;
+    font-weight:400;
+    padding: 10px;
+    margin-top: 60px;
+    background-color: black;
+    width: fit-content;
+    /* z-index: 1; */
+}
+
+.para1{
+    padding-top: 70px;
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+p1{
+    padding-top: 20px;
+}
+
+.para2{
+  background-color: #f1f1f1;         
+  padding: 20px;
+  margin: 30px auto;
+  margin-right: 21%;
+  width: 59%;                      
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-left: 4px solid #ccc;    
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+p2{
+    font-style: italic;
+}
+
+.para2 p2{
+    color:grey;
+    padding: 10px;
+}
+
+.imgContainer2, .imgContainer3, .imgContainer4{    
+    width: 743px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    /* z-index: 1; */
+}
+
+.image{
+    width: 743px;
+    /* max-width: 743px; */
+    
+}
+
+.hd{
+    font-weight: bold;
+}
+
+
+.imgPara{
+    width: 743px;
+    padding-top:20px;
+    line-height: 1.6;
+}
+
+p3{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+p4{
+    margin-top: 20px;
+}
+
+.menuContainer{
+    color: white;
+    font-weight:400;
+    padding: 10px;
+    margin-top: 60px;
+    background-color: black;
+    width: fit-content;
+    /* z-index: 1;     */
+}
+
+.labelContainer{
+    background-color: white;
+    width: 743px;
+    height: 40px;
+    padding: 1px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px grey;
+    justify-content: space-around;
+}
+
+label{
+    font-weight:500;
+    font-size: 20px;
+    padding: 10px;
+}
+
+label:hover{
+    color: grey;
+}
+
+.labelContainer>.eatContainer, .drinkContainer{
+    padding: 10px;
+}
+
+.textContainer1, .textContainer2{
+    width: 743px;
+    margin: 0;
+    display: inline-block;
+    line-height: 1.6;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.dishName{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.dishes{
+    font-size: 20px;
+    color: grey;
+    line-height: 2.6;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#eat:checked~.textContainer1{
+    display: inline-block;
+}
+
+#drink:checked~.textContainer2{
+    display: inline-block;
+}
+
+#eat, #drink{
+    display: none;
+}
+
+.textContainer1, .textContainer2{
+    display: none;
+}
+
+.imgContainer3{
+    margin-top: 30px;
+}
+
+.miniPara{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.FYI{
+    background-color: black;
+    color: white;
+    width: fit-content;
+}
+
+.form{
+    width: 743px;
+    display: flex;
+    background-position: center center;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.input, .button{
+    /* width: 100%; */
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.input, label{
+    margin-left: 0;
+    width: 743px;
+}
+
+.button{
+    width:30%;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+
+.button:hover{
+    background-color: rgb(169, 167, 167);
+    padding: 10px;
+    border: 1px rgb(169, 167, 167);
+    color: black;
+}
+
+.endContainer{
+    margin-top: 40px;
+    background-color:rgb(246, 248, 249);
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+a{
+    color: black;
+}
